@@ -1,0 +1,29 @@
+{
+    "name": "gitbook-plugin-redirect",
+    "description": "GitBook plugin to setup redirects",
+    "main": "index.js",
+    "version": "0.0.5",
+    "engines": {
+        "gitbook": "*"
+    },
+    "dependencies": {
+        "valid-url": "*"
+    },
+    "homepage": "https://github.com/ketan/gitbook-plugin-redirect",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ketan/gitbook-plugin-redirect.git"
+    },
+    "license": "Apache 2",
+    "bugs": {
+        "url": "https://github.com/ketan/gitbook-plugin-redirect/issues"
+    },
+    "keywords": [
+        "gitbook",
+        "plugin"
+    ],
+    "author": {
+        "name": "Ketan Padegaonkar",
+        "email": "ketanpadegaonkar [at] gmail [dot] com"
+    }
+}
