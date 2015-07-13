@@ -2,7 +2,7 @@
     "name": "gitbook-plugin-redirect",
     "description": "GitBook plugin to setup redirects",
     "main": "index.js",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "engines": {
         "gitbook": "*"
     },

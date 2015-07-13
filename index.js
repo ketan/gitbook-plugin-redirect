@@ -8,11 +8,6 @@ module.exports = {
 
       var dir = path.dirname(page.rawPath);
 
-      // construct path from gitbook binary to target redirect
-      var makePath = function(filename) {
-        return path.join(dir, filename);
-      };
-
       var redirectPageContent = function(path){
         return '' +
           '<link rel="canonical" href="' +  path + '">\n' +
@@ -32,11 +27,7 @@ module.exports = {
       if (redirect){
         page.content = page.content.replace(re, function(match, p1, p2) {
           var path = redirect[1] || redirect[2];
-          if (validUrl.isUri(path)) {
-            return redirectPageContent(path);
-          } else {
-            return redirectPageContent(makePath(path));
-          }
+          return redirectPageContent(path);
         });
       }
 
